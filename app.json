@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "demo-expo-app",
-    "slug": "demo-expo-app",
+    "name": "Expo Demo App",
+    "slug": "expo-demo-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -16,13 +16,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sachsenspielt.expodemoapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.sachsenspielt.expodemoapp"
     },
     "web": {
       "bundler": "metro",
@@ -32,8 +34,14 @@
     "plugins": [
       "expo-router"
     ],
-    "experiments": {
-      "typedRoutes": true
-    }
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "fa12c958-fb6e-45fd-b47c-bcd89e26cb8b"
+      }
+    },
+    "owner": "sachsenspielt"
   }
 }
