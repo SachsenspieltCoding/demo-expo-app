@@ -3,8 +3,7 @@ import {Image, Pressable, StyleSheet} from "react-native";
 import Colors from "@constants/Colors";
 import {Product} from "@/types";
 import {Link} from "expo-router";
-
-const defaultPizzaImage = "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/food/default.png"
+import {defaultPizzaImage} from "@constants/Images";
 
 type ProductListItemProps = {
     product: Product;
@@ -22,8 +21,6 @@ export function ProductListItem({product}: ProductListItemProps) {
 
                 <Text style={styles.title}>{product.name}</Text>
                 <Text style={styles.price}>${product.price}</Text>
-
-
             </Pressable>
         </Link>
     )

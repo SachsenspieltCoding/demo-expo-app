@@ -13,8 +13,11 @@
         "./assets/*"
       ],
       "@constants/*": [
-          "./src/constants/*"
+        "./src/constants/*"
       ],
+      "@providers/*": [
+        "./src/providers/*"
+      ]
     }
   },
   "include": [
