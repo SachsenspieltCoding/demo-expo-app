@@ -18,7 +18,3 @@ export default function MenuScreen() {
         </View>
     );
 }
-
-const styles = StyleSheet.create({
-    container: {}
-})
